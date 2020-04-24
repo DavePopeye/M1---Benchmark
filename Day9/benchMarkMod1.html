@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Module One</title>
+</head>
+
+<style>
+    body {
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    .body {
+        width: 500px;
+        align-items: center;
+        margin: auto;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .table {
+        border: solid black;
+        border-radius: 10px;
+
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+
+    a {
+        color: royalblue;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    .etp {
+        visibility: hidden;
+    }
+
+    td {
+        border: solid green;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .tr {
+        border: dotted red;
+    }
+</style>
+
+<body>
+    <div class="body">
+
+        <h1 class="heading">My Benchmark</h1>
+
+        <ol>
+            <li>Be Productive</li>
+            <li>Challange Yourself</li>
+            <li>Don't Panic</li>
+            <li>PLEASE SEND HELP</li>
+            <li>...and wash your hands</li>
+        </ol>
+        <div id="container">
+
+            <table class="table">
+                <tr class="tr">
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        <a href="https://www.amazon.co.uk/Film-tie-Stephen-Kings-ebook/dp/B003BKZW7C/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
+                            target="_blank">
+                            <img src="images/it.jpg" alt="It book cover">
+                        </a>
+                    </td>
+                    <td>
+
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        <a href="https://www.amazon.co.uk/dp/B087LVX9JF/ref=sr_1_4?crid=TU11X0340OF0&dchild=1&keywords=the+dunwich+horror&qid=1587723667&s=digital-text&sprefix=the+dunwich%2Cdigital-text%2C171&sr=1-4"
+                            target="_blank">
+                            <img src="images/Dun.jpg" alt="Dunwich Horror cover book">
+                        </a>
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        <a href="https://www.amazon.co.uk/Norwegian-Wood-Haruki-Murakami-ebook/dp/B005TKD6NY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
+                            target="_blank">
+                            <img src="images/mura.jpg" alt="Norwegian Wood cover book">
+                        </a>
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        hello
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        hello
+                    </td>
+                    <td>
+                        <a href="https://www.amazon.co.uk/Eat-Pray-Love-Womans-Everything-ebook/dp/B0037RDPEG/ref=sr_1_1?crid=289YF64ZW11TS&dchild=1&keywords=eat+pray+love&qid=1587723701&s=digital-text&sprefix=eat+%2Cdigital-text%2C179&sr=1-1"
+                            target="_blank">
+                            <img src="images/epl.jpg" alt="Eat Pray Love">
+                        </a>
+                    </td>
+                    <td>
+                        hello
+                    </td>
+                    <td colspan="2">
+                        hello
+
+                        hello
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <p><i>Hello World</i></p>
+
+        <ul>
+            <li>Things to buy
+                <ul>
+                    <li>Toilet Paper</li>
+                    <li>Booze</li>
+                    <li>Books
+
+                        <ul>
+                            <li>The Dunwich Horror - HP. Lovecraft</li>
+                            <li>IT - S. King</li>
+                            <li class="etp">Eat Pray Love - E. Gilbert</li>
+                            <li>Norwegian Wood - Murakami</li>
+                        </ul>
+                    </li>
+                </ul>
+        </ul>
+
+        <footer>
+            Created By
+            <a href="https://github.com/DavePopeye" target="_blank">
+                DavePopeye
+            </a>
+        </footer>
+
+
+
+
+
+
+        <script>
+
+            var x = 'John'
+            var y = 'Doe'
+            console.log(x, '<>', y)
+
+            ///////////
+
+            let object = {
+                name: 'Davide',
+                surname: 'Papa',
+                email: 'dapa@mail.com',
+            }
+
+            console.log(object)
+
+            ///////////
+
+            delete (object.email)
+            console.log(object)
+
+            ///////////
+
+            var writers = [
+                'E.A. Poe',
+                'H.P. Lovecraft',
+                'C. Doyle',
+                'S. King',
+                'T. Ligotti',
+                'C. Palahniuk',
+                'D. Glukhovsky',
+                'I. Calvino',
+                'R.E. Howard',
+                'C.A. Smith'
+            ]
+
+            console.log(writers)
+
+            ///////////////
+
+            let random = function rnd() {
+                return Math.floor(Math.random() * 100)
+            }
+
+            let arra = Array(100).fill(0).map(random)
+            console.log(arra)
+
+            ///////////////
+
+            //////////////
+
+
+            let first = Array(10).fill(0).map(random)
+            let second = Array(10).fill(0).map(random)
+            let third = first.concat(second)
+
+            console.log(third)
+
+            /////////////////
+            function double() { }
+            ////////////////
+            function doubleSum() { }
+            ///////////////
+
+            document.getElementById('container')
+
+            ////////////////
+
+            let a = document.querySelector('td')
+
+            ////////////////
+
+            let inside = a.innerText
+            console.log(inside)
+
+            ///////////////
+            
+            function changeH(){
+                document.querySelector('.heading').innerHTML = 'Quarantine DIY'
+            }
+
+            ///////////////
+
+            function addRow(){
+                let row = document.querySelector('.table')
+            }
+
+
+
+
+            window.onload = function(){
+                changeH('')
+            }
+        </script>
+
+
+
+
+    </div>
+</body>
+
+</html>
