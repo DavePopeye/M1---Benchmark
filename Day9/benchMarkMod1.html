@@ -51,9 +51,7 @@
         padding: 10px;
     }
 
-    .tr {
-        border: dotted red;
-    }
+   
 </style>
 
 <body>
@@ -71,7 +69,7 @@
         <div id="container">
 
             <table class="table">
-                <tr class="tr">
+                <tr>
                     <td>
                         hello
                     </td>
@@ -274,14 +272,33 @@
             ///////////////
 
             function addRow(){
-                let row = document.querySelector('.table')
+                let t = document.querySelector('.table');
+                let row = t.insertRow(-1);
+                let cellBaby = row.insertCell();
+                let textBaby = document.createTextNode('hello world');
+                cellBaby.appendChild(textBaby);
             }
 
+            //////////////////
 
+            function goClassy(){
+                let c = document.querySelector('tr')
+                let classy = c.classList.add('test')
+            }
+
+            //////////////////
+
+            function angryLink(){
+                let red = document.querySelector('a')
+                let angry = red.style.background = '#FF0000'
+            }
 
 
             window.onload = function(){
                 changeH('')
+                addRow()
+                goClassy()
+                angryLink()
             }
         </script>
 
